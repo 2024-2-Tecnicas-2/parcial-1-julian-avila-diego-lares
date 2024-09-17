@@ -22,7 +22,12 @@ public class Principal {
 
         do {
 
-            System.out.println("Ingrese la opción deseada: ");
+            System.out.println("Menu:\n"
+                    + "Slececione la accion que desea realizar: \n"
+                    + "1. Agregar dispositivos \n"
+                    + "2. Mostrar dispositivos \n"
+                    + "3. Procesar Pedidos \n"
+                    + "4 Salir");
             opcion = sc.nextInt();
 
             switch (opcion) {
@@ -45,6 +50,9 @@ public class Principal {
                 case '3':
 
                     break;
+                      case '4':
+                          System.out.close();
+                    break;
                     
             }
         } while (true);
@@ -59,5 +67,10 @@ public class Principal {
         for (Producto producto : inventario) {
             System.out.println("El dispositivo es: " + producto.getNombre() + " Descripción: " + producto.getDescripcion() + "Cantidad: " + producto.getCantidad() + " Precio: " + producto.getPrecio());
         }
+    }
+    
+    public void procesarPedidos(){
+        
+        
     }
 }

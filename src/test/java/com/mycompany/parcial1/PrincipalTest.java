@@ -4,6 +4,8 @@
  */
 package com.mycompany.parcial1;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -16,11 +18,37 @@ public class PrincipalTest {
     public PrincipalTest() {
     }
 
-    /**
-     * Test of main method, of class Principal.
-     */
+     ArrayList<Producto> inventario = new ArrayList<>();
+
+   
     @Test
-    public void testMain() {
+    public void testAgregarDispositivo() {
+        ArrayList<Producto> inventario = new ArrayList<>();
+        Producto pro = new Accesorio("Diego", "Nose", 25, 2);
+        inventario.add(pro);
+        Producto pre = new Accesorio("", "", 0, 0);
+        inventario.add(pre);
+        if (inventario.add(pro)==inventario.add(pre)) {
+            System.out.println("Los objetos presentados son nulos, no contiene informacion");
+        }else{
+            System.out.println("Los objetos presentados son correctos");
+        }
+  
+                
+        
+    }
+
+ 
+    
+    @Test
+    public void testMostrarDispositivo() {
+        if (inventario.isEmpty()) {
+            System.out.println("El inventario esta vacio, no contiene informacion");
+        }else{
+                System.out.println("El inventario contiene informacion");
+            
+        }
+        
     }
     
 }

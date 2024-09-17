@@ -4,10 +4,10 @@
  */
 package com.mycompany.parcial1;
 
-/**
- *
- * @author USUARIO
- */
+
 public class Cliente {
+    
+    String nombre;
+    String direccion;
     
 }

@@ -4,10 +4,15 @@
  */
 package com.mycompany.parcial1;
 
-/**
- *
- * @author USUARIO
- */
-public class Laptop {
+public class Laptop extends Producto {
+ 
+    
+    
+    public Laptop(String nombre, String descripcion, double precio, int cantidad) {
+        super(nombre, descripcion, precio, cantidad);
+       
+    }
+
+  
     
 }

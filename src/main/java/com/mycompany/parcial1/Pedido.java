@@ -4,10 +4,8 @@
  */
 package com.mycompany.parcial1;
 
-/**
- *
- * @author USUARIO
- */
 public class Pedido {
+    
+    
     
 }

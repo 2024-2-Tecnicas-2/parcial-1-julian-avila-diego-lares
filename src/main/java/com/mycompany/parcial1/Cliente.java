@@ -9,5 +9,13 @@ public class Cliente {
     
     String nombre;
     String direccion;
+    String pedido;
+
+    public Cliente(String nombre, String direccion, String pedido) {
+        this.nombre = nombre;
+        this.direccion = direccion;
+        this.pedido = pedido;
+    }
+
     
 }
